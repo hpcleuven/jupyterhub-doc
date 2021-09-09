@@ -1,0 +1,22 @@
+# JupyterHub user documentation
+
+The master branch is deployed at https://hpcleuven.github.io/jupyterhub-doc/
+using Github Pages.
+
+To locally render the documentation, you will need Jekyll and Bundler.
+One way to install the required dependencies is to create a Conda environment
+from the supplied YAML file:
+
+~$ cd jupyterhub-doc
+~$ conda env create -f ./environment.yml -n hyde
+~$ conda activate hyde
+~$ gem install bundler
+
+and for the additional GEMs:
+
+~$ cd jupyterhub-doc
+~$ bundle install
+
+The Jekyll server can then be launched as follows:
+
+~$ bundle exec jekyll serve
