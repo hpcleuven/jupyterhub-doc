@@ -18,11 +18,10 @@ https://jupyterhub2.hpc.kuleuven.be), where you will be prompted for a
 username and password.
 
 
+## Starting a Jupyter Notebook App
 
-## Starting a server
-
-After logging in, you will be able to launch your 'server' by selecting
-a job profile and a compute project.
+After logging in, you will be able to launching a Jupyter Notebook App by
+selecting a job profile and a compute project.
 
 > **_NOTE:_** This assumes that you have at least one compute project (with
   credits) associated with your VSC account.
@@ -36,5 +35,5 @@ After submitting your request, you will need to wait a moment until the job
 has started on the cluster. Currently, the best way to check this is to
 login to Genius with your VSC account and execute the `showq` command.
 
-Then, you can navigate to the "Home" tab and access your server via the
-"My Server" button.
+Then, you can navigate to the "Home" tab and access the Dashboard of your
+Jupyter Notebook App via the "My Server" button.
