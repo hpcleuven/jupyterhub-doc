@@ -37,3 +37,12 @@ login to Genius with your VSC account and execute the `showq` command.
 
 Then, you can navigate to the "Home" tab and access the Dashboard of your
 Jupyter Notebook App via the "My Server" button.
+
+
+## Running a Notebook document
+
+In the Dashboard, you can either open one of your existing Notebook documents
+(if any) or create a new one. For new Notebook documents, you will have the
+choice between ones with a Python kernel or with an R kernel (see also the
+(./software_installation) page). These are then powered by the CPU cores
+(and possibly GPU cards) allocated to your compute job on the cluster.
