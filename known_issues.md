@@ -3,7 +3,7 @@ title: Known issues
 nav_order: 3
 ---
 
-### Known issues
+## Known issues
 
 1. After submitting a request for a Jupyter Notebook App, a waiting page
    is displayed. When the job has started and the Jupyter Notebook App is

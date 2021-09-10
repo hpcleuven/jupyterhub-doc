@@ -3,8 +3,7 @@ title: Software installation
 nav_order: 4
 ---
 
-
-### User-defined kernels
+## User-defined kernels
 
 The standard kernels in our JupyterHub setup include Python 3.6 and R 3.6.3,
 both with only few packages installed. These are sufficient for demonstration
