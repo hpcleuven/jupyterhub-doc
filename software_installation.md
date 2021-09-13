@@ -65,7 +65,7 @@ We will create a MiniConda environment with the following Python packages:
 Unlike with Python, it is not possible to add a Jupyter installation in your R conda environment. 
 For this reason you need a general Jupyter install in your Miniconda:
 
-1. Be sure that you don't have an active environment. You can check this with ``echo $CONDA_DEFAULT_ENV``.
+1. Be sure that you are in your base environment. You can check this with ``echo $CONDA_DEFAULT_ENV``.
    Nothing should be returned when executing this statement. You can use ``conda deactivate`` to deactivate
    an active environment.
    
