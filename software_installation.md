@@ -75,7 +75,7 @@ For R, let's create an environment with following packages, and let's name it r4
 > **_NOTE:_** Instead of creating a new environment you can also introduce
   an existing environment to your JupyterHub. In this case you can skip the
   creation of the environment.
-> **_NOTE:_** Always include the jupyter_client and the irkernekpackage, to be 
+> **_NOTE:_** Always include the jupyter_client and the irkernel package, to be 
   able to install the kernel. 
 
 1. Create the new R environment: 
