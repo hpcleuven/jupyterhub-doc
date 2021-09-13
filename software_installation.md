@@ -69,26 +69,25 @@ For R, let's create an environment with following packages, and let's name it r4
 - `data.table`
 - `ggplot2`
 - `tidyr`
+- `irkernel`
+- `jupyter_client`
 
 > **_NOTE:_** Instead of creating a new environment you can also introduce
   an existing environment to your JupyterHub. In this case you can skip the
   creation of the environment.
+> **_NOTE:_** Always include the jupyter_client and the irkernekpackage, to be 
+  able to install the kernel. 
 
 1. Create the new R environment: 
   ```
-  conda create -n r41env r-base=4.1 r-dplyr r-data.table r-ggplot2 r-tidyr -c conda-forge
+  conda create -n r41env r-base=4.1 r-dplyr r-data.table r-ggplot2 r-tidyr r-irkernel jupyter_client -c conda-forge
   ```
 2. Activate the environment:
   ```
   conda activate r41env
-  ```
-3. Unlike with Python, it is not possible to add a Jupyter installation in your R conda environment.
-   For this reason, we use Rscript to install IRkernel, with following command:
-   ```
-   Rscript -e 'install.packages("IRkernel", repos="https://ftp.belnet.be/mirror/CRAN/")'
-   ```   
-4. Install the kernel in ``$VSC_HOME/.local`` to be able to use it in JupyterHUB:
+  ```   
+3. Install the kernel in ``$VSC_HOME/.local`` to be able to use it in JupyterHUB:
   ```
   Rscript -e 'IRkernel::installspec(prefix="${VSC_HOME}/.local/", name="r41env", displayname="r41env")'
   ```
-5. Connect to JupyterHUB and verify if you can find your newly created R environment in the kernel list.
+4. Connect to JupyterHUB and verify if you can find your newly created R environment in the kernel list.
