@@ -61,20 +61,7 @@ We will create a MiniConda environment with the following Python packages:
 
 
 ### Environment creation: R
-
-Unlike with Python, it is not possible to add a Jupyter installation in your R conda environment. 
-For this reason you need a general Jupyter install in your Miniconda:
-
-1. Be sure that you are in your base environment. You can check this with ``echo $CONDA_DEFAULT_ENV``.
-   Nothing should be returned when executing this statement. You can use ``conda deactivate`` to deactivate
-   an active environment.
-   
-2. Install Jupyter using:
-   ``conda install jupyter``
-   
- > **_NOTE:_** This is a one-time install. If you want to add extra R environments in the future, you can 
-  skip this part.  
-  
+ 
 For R, let's create an environment with following packages, and let's name it r41env:
 
 - `R 4.1`
@@ -82,25 +69,26 @@ For R, let's create an environment with following packages, and let's name it r4
 - `data.table`
 - `ggplot2`
 - `tidyr`
-- `irkernel`
-
 
 > **_NOTE:_** Instead of creating a new environment you can also introduce
   an existing environment to your JupyterHub. In this case you can skip the
   creation of the environment.
-> **_NOTE:_** Always include the irkernel package in your environment, as this is necessary to install the kernel. 
-
 
 1. Create the new R environment: 
   ```
-  conda create -n r41env r-base=4.1 r-dplyr r-data.table r-ggplot2 r-tidyr r-irkernel -c conda-forge
+  conda create -n r41env r-base=4.1 r-dplyr r-data.table r-ggplot2 r-tidyr -c conda-forge
   ```
 2. Activate the environment:
   ```
   conda activate r41env
   ```
-3. Install the kernel in ``$VSC_HOME/.local`` to be able to use it in JupyterHUB:
+3. Unlike with Python, it is not possible to add a Jupyter installation in your R conda environment.
+   For this reason, we use Rscript to install IRkernel, with following command:
+   ```
+   Rscript -e 'install.packages("IRkernel", repos="https://ftp.belnet.be/mirror/CRAN/")'
+   ```   
+4. Install the kernel in ``$VSC_HOME/.local`` to be able to use it in JupyterHUB:
   ```
   Rscript -e 'IRkernel::installspec(prefix="${VSC_HOME}/.local/", name="r41env", displayname="r41env")'
   ```
-4. Connect to JupyterHUB and verify if you can find your newly created R environment in the kernel list.
+5. Connect to JupyterHUB and verify if you can find your newly created R environment in the kernel list.
