@@ -9,7 +9,7 @@ nav_order: 2
 
 The main JupyterHub server can be reached at [jupyterhub.hpc.kuleuven.be](
 https://jupyterhub.hpc.kuleuven.be). You will be asked to authenticate with
-your central KULeuven credentials.
+your central KU Leuven credentials.
 
 ### Temporary VSC accounts
 
