@@ -49,6 +49,7 @@ We will create a MiniConda environment with the following Python packages:
    JupyterHub can find it:
    ```
    python -m ipykernel install  --prefix=${VSC_HOME}/.local/ --name 'p39env'
+   ```
 
 4. Connect to JupyerHub and verify that the new 'p39env' kernel appears.
    It should look like this: 
@@ -86,4 +87,4 @@ For R, let's create an environment with following packages, and let's name it r4
   ```
   Rscript -e 'IRkernel::installspec(prefix="${VSC_HOME}/.local/", name="r41env", displayname="r41env")'
   ```
-4. Connect to JupyterHUB and verify if you can find your newly created R environment in the kernel list.
+4. Connect to JupyterHub and verify if you can find your newly created R environment in the kernel list.
