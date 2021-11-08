@@ -21,15 +21,11 @@ MiniConda installation instructions.
 
 We will create a MiniConda environment with the following Python packages:
 
-- `python 2.7`
+- `python 3.9`
 - `numpy`
 - `scipy`
-- `mayavi`
-- `matplotlib`
 - `pandas`
-- `pandas`
-- `tensorflow`
-- `seaborn`
+- `tensorflow-gpu`
 - `ipykernel`
 
 > **_NOTE:_** Instead of creating a new environment you can also introduce
@@ -39,23 +35,25 @@ We will create a MiniConda environment with the following Python packages:
   as this is necessary to install the kernel. 
 
 
-1. Create a new Conda environment (here named `p27env`):
+1. Create a new Conda environment (here named `p39env`):
    ```
-   conda create -n p27env python=2.7 numpy scipy mayavi matplotlib pandas tensorflow seaborn ipykernel
+   conda create -n p39env python=3.9 numpy scipy pandas tensorflow-gpu ipykernel
    ```
 
 2. Activate the environment:
    ```
-   conda activate p27env
+   conda activate p39env
    ```
 
 3. Install the associated IPython kernel in ``${VSC_HOME}/.local`` so that
    JupyterHub can find it:
    ```
-   python -m ipykernel install  --prefix=${VSC_HOME}/.local/ --name 'p27env'
+   python -m ipykernel install  --prefix=${VSC_HOME}/.local/ --name 'p39env'
+   ```
 
-4. Connect to JupyerHub and verify that the new 'p27env' kernel appears.
-   It should look like this: ![](./images/choose_kernel.png)
+4. Connect to JupyterHub and verify that the new 'p39env' kernel appears.
+   It should look like this: 
+                  ![](./images/jupyter_envs.PNG)
 
 5. Test the environment and make sure that it works as expected.
 
@@ -65,10 +63,9 @@ We will create a MiniConda environment with the following Python packages:
 For R, let's create an environment with following packages, and let's name it r41env:
 
 - `R 4.1`
-- `dplyr`
 - `data.table`
 - `ggplot2`
-- `tidyr`
+- `factoextra`
 - `irkernel`
 - `jupyter_client`
 
@@ -80,14 +77,14 @@ For R, let's create an environment with following packages, and let's name it r4
 
 1. Create the new R environment: 
   ```
-  conda create -n r41env r-base=4.1 r-dplyr r-data.table r-ggplot2 r-tidyr r-irkernel jupyter_client -c conda-forge
+  conda create -n r41env r-base=4.1 r-data.table r-ggplot2 r-factoextra r-irkernel jupyter_client -c conda-forge
   ```
 2. Activate the environment:
   ```
   conda activate r41env
   ```   
-3. Install the kernel in ``$VSC_HOME/.local`` to be able to use it in JupyterHUB:
+3. Install the kernel in ``$VSC_HOME/.local`` to be able to use it in JupyterHub:
   ```
   Rscript -e 'IRkernel::installspec(prefix="${VSC_HOME}/.local/", name="r41env", displayname="r41env")'
   ```
-4. Connect to JupyterHUB and verify if you can find your newly created R environment in the kernel list.
+4. Connect to JupyterHub and verify if you can find your newly created R environment in the kernel list.
