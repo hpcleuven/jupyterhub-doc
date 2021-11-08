@@ -43,6 +43,13 @@ Jupyter Notebook App via the "My Server" button.
 
 In the Dashboard, you can either open one of your existing Notebook documents
 (if any) or create a new one. For new Notebook documents, you will have the
-choice between ones with a Python kernel or with an R kernel (see also the
-(./software_installation) page). These are then powered by the CPU cores
+choice between ones with a Python kernel or with an R kernel. These are then powered by the CPU cores
 (and possibly GPU cards) allocated to your compute job on the cluster.
+
+## Recorded tutorial
+
+A detailed explanation and step-by-step tutorial of the JupyterHub can be found [here](https://kuleuven.mediaspace.kaltura.com/media/JupyterHub-LunchBox-2021-10-19/1_lxer6oid).
+The two example notebooks used in the tutorial can be found [here](https://github.com/w-lampaert/JupyterHub_examples). 
+The example conda environments created as on the [software installation page](https://github.com/hpcleuven/jupyterhub-doc/blob/master/software_installation.md) can be used
+for these notebooks.
+
