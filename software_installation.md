@@ -51,8 +51,8 @@ We will create a MiniConda environment with the following Python packages:
    python -m ipykernel install  --prefix=${VSC_HOME}/.local/ --name 'p39env'
 
 4. Connect to JupyerHub and verify that the new 'p39env' kernel appears.
-   It should look like this: ![](./images/jupyter_envs.PNG)
-
+   It should look like this: 
+   ![](./images/jupyter_envs.PNG)
 
 5. Test the environment and make sure that it works as expected.
 
