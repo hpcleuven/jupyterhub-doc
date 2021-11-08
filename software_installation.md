@@ -51,7 +51,7 @@ We will create a MiniConda environment with the following Python packages:
    python -m ipykernel install  --prefix=${VSC_HOME}/.local/ --name 'p39env'
    ```
 
-4. Connect to JupyerHub and verify that the new 'p39env' kernel appears.
+4. Connect to JupyterHub and verify that the new 'p39env' kernel appears.
    It should look like this: 
                   ![](./images/jupyter_envs.PNG)
 
@@ -83,7 +83,7 @@ For R, let's create an environment with following packages, and let's name it r4
   ```
   conda activate r41env
   ```   
-3. Install the kernel in ``$VSC_HOME/.local`` to be able to use it in JupyterHUB:
+3. Install the kernel in ``$VSC_HOME/.local`` to be able to use it in JupyterHub:
   ```
   Rscript -e 'IRkernel::installspec(prefix="${VSC_HOME}/.local/", name="r41env", displayname="r41env")'
   ```
