@@ -50,6 +50,6 @@ choice between ones with a Python kernel or with an R kernel. These are then pow
 
 A detailed explanation and step-by-step tutorial of the JupyterHub can be found [here](https://kuleuven.mediaspace.kaltura.com/media/JupyterHub-LunchBox-2021-10-19/1_lxer6oid).
 The two example notebooks used in the tutorial can be found [here](https://github.com/w-lampaert/JupyterHub_examples). 
-The example conda environments created as on the [software installation page](./software_installation) can be used
+The example conda environments created as on the [software installation page](./software_installation.md) can be used
 for these notebooks.
 
