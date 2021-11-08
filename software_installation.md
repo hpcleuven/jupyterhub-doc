@@ -42,7 +42,7 @@ We will create a MiniConda environment with the following Python packages:
 
 2. Activate the environment:
    ```
-   conda activate p27env
+   conda activate p39env
    ```
 
 3. Install the associated IPython kernel in ``${VSC_HOME}/.local`` so that
