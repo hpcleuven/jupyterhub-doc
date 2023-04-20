@@ -6,8 +6,9 @@ nav_order: 1
 ## Welcome to the JupyterHub service documentation!
 
 !!!!!!!!!!!!!!!!!!!
-The jupyterhub service will be shutdown on 31/3/2023 and will be replaced by https://ondemand.hpc.kuleuven.be
-openOndemand offers the posibility to run jupyternotebooks on our HPC clusters. The kernals that you are using now, will also be available in opDemand.
+The JupyterHub service has been shut down on 31/03/2023. It has been replaced by [OnDemand](
+https://ondemand.hpc.kuleuven.be) which also allows to run Jupyter notebooks on our HPC clusters.
+The kernels that you were using before are also available in OnDemand.
 !!!!!!!!!!!!!!!!!!!
 
 This website describes how KU Leuven users may employ the JupyterHub service.
